@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    display: grid;
+    place-items: center;
+    background-color: black;
+}
+
+h1{
+    text-align: center;
+    margin: 20px 0 20px 0;
+    color: blue;
+}
+h2{
+    text-align: center;
+    margin-bottom: 35px;
+    color: aqua;
+}
+
+.board{
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    border: 10px solid navy;
+    width: 720px;
+    background-color: blue;
+    
+  
+}
+
+ul{
+    display: grid;
+    place-items: center;
+    
+}
+
+/* every cicle */
+ul p{
+    margin: 5px;
+    width: 75px;
+    height: 75px;
+    border: 5px solid navy;
+    border-radius: 100px;
+    background-color: black;
+}
+
+ul:hover{
+    cursor: pointer;
+    background-color: rgb(98, 136, 238);
+}
+
+
+@media(max-width:700px){
+    .board{
+        width: 500px;
+    }
+    ul p{
+        width: 55px;
+        height: 55px;
+        
+    }
+    
+}
+@media(max-width:520px){
+    .board{
+        width: 400px;
+    }
+    ul p{
+        width: 40px;
+        height: 40px;
+        
+    }
+    
+}
+@media(max-width:420px){
+    .board{
+        width: 320px;
+    }
+    ul p{
+        width: 30px;
+        height: 30px;
+        
+    }
+    
+}
